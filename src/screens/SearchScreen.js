@@ -21,7 +21,6 @@ const SearchScreen = () => {
             onTermChange={newTerm => setTerm(newTerm)}
             onTermSubmit={() => searchApi(term)}
         />
-        <Text>Hello from Search SCreen</Text>
         <Text>{term}</Text>
         {errorMessage ? <Text>{errorMessage}</Text> : null}
         <Text>We found {results.length} results</Text>
